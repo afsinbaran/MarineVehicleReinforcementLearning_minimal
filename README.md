@@ -36,9 +36,9 @@ controller is used as a benchmark.
 This fork removes all the log files, trained agents, etc... from the repo. To remove the bloat from the repo I needed to nuke the history. I've achieved this by creating an orphan branch, committing the minimal version to it, and removing the original main branch.
 
 Other than that, the environment code has been moved into it's own package for better user experience:
-    * `verySimpleAuv.py` (untouched): Implements the environment.
-    * `flowGenerator.py` (untouched): Uses pre-computed spectral POD from [pySPOD](https://github.com/MathEXLab/PySPOD) to generate turbulent flow. Data has been generated using [ReFRESCO](https://www.marin.nl/en/facilities-and-tools/software/refresco) CFD code building on the synthetic turbulence generation technique described in [Lidtke et al.](https://doi.org/10.3390/jmse9111274).
-    * `resources.py` (minor changes): Implements functions for plotting, training and evaluating RL agents.
+* `verySimpleAuv.py` (untouched): Implements the environment.
+* `flowGenerator.py` (untouched): Uses pre-computed spectral POD from [pySPOD](https://github.com/MathEXLab/PySPOD) to generate turbulent flow. Data has been generated using [ReFRESCO](https://www.marin.nl/en/facilities-and-tools/software/refresco) CFD code building on the synthetic turbulence generation technique described in [Lidtke et al.](https://doi.org/10.3390/jmse9111274).
+* `resources.py` (minor changes): Implements functions for plotting, training and evaluating RL agents.
 
 The module *definitely* could be implemented better.
 
