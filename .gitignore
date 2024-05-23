@@ -121,4 +121,4 @@ cython_debug/
 # Custom
 /agents
 /figures/
-*.gif
+/*.gif
