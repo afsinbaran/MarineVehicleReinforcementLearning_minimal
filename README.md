@@ -40,7 +40,7 @@ Other than that, the environment code has been moved into it's own package for b
 * `flowGenerator.py` (untouched): Uses pre-computed spectral POD from [pySPOD](https://github.com/MathEXLab/PySPOD) to generate turbulent flow. Data has been generated using [ReFRESCO](https://www.marin.nl/en/facilities-and-tools/software/refresco) CFD code building on the synthetic turbulence generation technique described in [Lidtke et al.](https://doi.org/10.3390/jmse9111274).
 * `resources.py` (minor changes): Implements functions for plotting, training and evaluating RL agents.
 
-The module *definitely* could be implemented better.
+The module *definitely* could be implemented better by me.
 
 An example usage is provided in `main.py`. This script trains multiple agents with the same configuration on the CPU using multiprocessing and benchmarks them against a simple PD controller. It is a modified version of `main_00_sbl.py` from the current iteration of the original repo (as of 23/05/2024). `main.py` shaves of and adjusts parts of the code for a better user experience.
 
